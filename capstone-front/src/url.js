@@ -1,3 +1,3 @@
-const url =  "https://https://restaurantdepo.onrender.com/Capsfood/"
+const url =  "https://restaurantdepo.onrender.com/Capsfood/"
 
 export default url
