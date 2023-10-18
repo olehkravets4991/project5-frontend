@@ -23,5 +23,5 @@ ERD|
 
 
 ## Mockup 
-![Mockup](https://i.imgur.com/HzHoBHd.png)
+![Mockup](https://i.imgur.com/EbMlRah.png)
 - [Free Mockup Tool](https://imgur.com/)
