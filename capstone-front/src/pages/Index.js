@@ -13,6 +13,8 @@ function Index(props) {
         <ul classNmae="flex">
             <li className='ind1'>Login</li>
             <li className='ind1'>Best Restaurants</li>
+            <li className='ind1'>I have visited</li>
+            <li className='ind1'>Want to go</li>
 
         </ul>
         <Form method="post" action="/create">
