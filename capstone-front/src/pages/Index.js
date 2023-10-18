@@ -10,6 +10,11 @@ function Index(props) {
     <div className="index-container">
       <div className="restForm">
         <h1>RestaurantDepo</h1>
+        <ul classNmae="flex">
+            <li className='ind1'>Login</li>
+            <li className='ind1'>Best Restaurants</li>
+
+        </ul>
         <Form method="post" action="/create">
           <fieldset className="rest-info">
             <label>Name</label>
