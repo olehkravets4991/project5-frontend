@@ -9,7 +9,7 @@ function Index(props) {
   return (
     <div className="index-container">
       <div className="restForm">
-        <h2>Create a Restaurant</h2>
+        <h1>RestaurantDepo</h1>
         <Form method="post" action="/create">
           <fieldset className="rest-info">
             <label>Name</label>

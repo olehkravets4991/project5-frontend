@@ -4,8 +4,14 @@
 
 
 body{
+    background-image: url('https://i.imgur.com/Sf96Klp.jpg');
+    
     background-color: #000300;
     color: white;
+  }
+
+  h1 {
+    color: #ccc;
   }
 
 
@@ -37,6 +43,7 @@ body{
     display: block; /* Make labels block-level for better spacing */
     font-weight: bold; /* Add font weight to make labels stand out */
     margin-bottom: 8px; /* Add spacing between labels */
+    color: #ccc;
   }
   
   .rest-info input {
