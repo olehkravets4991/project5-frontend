@@ -1,26 +1,39 @@
 import Post from '../components/Post';
-import {useLoaderData, Form} from 'react-router-dom';
+import { useLoaderData, Form } from 'react-router-dom';
+import './Styles.css';
+import '../index.css';
 
-function Index (props){
+function Index(props) {
+  const capsfood = useLoaderData();
 
-    // fetch the loaderdata using the useLoaderData hook
-    const capsfood = useLoaderData()
+  return (
+    <div className="index-container">
+      <div className="restForm">
+        <h2>Create a Restaurant</h2>
+        <Form method="post" action="/create">
+          <fieldset className="rest-info">
+            <label>Name</label>
+            <input type="text" name="name" placeholder="Name" />
+            <label>Address</label>
+            <input type="text" name="address" placeholder="Address" />
+            <label>Food</label>
+            <input type="text" name="food" placeholder="Food" />
+            <label>Notes</label>
+            <input type="text" name="notes" placeholder="Notes" />
+            <label>Picture</label>
+            <input type="text" name="picture" placeholder="Picture" />
+          </fieldset>
+          <button>Create a new Restaurant</button>
+        </Form>
+      </div>
 
-     // map over the todos and create a Post component for each todo
-     return <>
-     <div style={{textAlign: "center"}}>
-         <h2>Create a Restaurant</h2>
-         <Form method="post" action="/create">
-             <input type="text" name="name" placeholder="Name"/>
-             <input type="text" name="address" placeholder="Address"/>
-             <input type="text" name="food" placeholder="Food"/>
-             <input type="text" name="notes" placeholder="Notes"/>
-             <input type="text" name="picture" placeholder="Picture"/>
-             <button>Create a new Restaurant</button>
-         </Form>
-     </div>
-     {capsfood.map((capsfood) => <Post key={capsfood.id} post={capsfood}/>)}
-     </>
+      <div className="restList">
+        {capsfood.map((capsfood) => (
+          <Post key={capsfood.id} post={capsfood} />
+        ))}
+      </div>
+    </div>
+  );
 }
 
 export default Index;

@@ -17,7 +17,7 @@ function Post ({post}){
             <h2>{post.address}</h2>
             <h2>{post.food}</h2>
             <h2>{post.notes}</h2>
-            <h2>{post.picture}</h2>
+            <img src={post.picture}/>
         </Link>
     </div>
 }

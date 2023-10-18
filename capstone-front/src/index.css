@@ -1,3 +1,161 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+body{
+    background-color: #000300;
+    color: white;
+  }
+
+
+/* index.css */
+.restForm {
+    text-align: center;
+    max-width: 800px; /* Change the maximum width of .restForm */
+    margin: 0 auto; /* Center align the container */
+    padding: 20px; /* Add padding to the container */
+  }
+  
+  .restForm h2 {
+    font-size: 24px;
+    font-weight: bold;
+    /* Add other styles for .restForm h2 */
+  }
+  
+  .rest-info {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px; /* Add padding to the fieldset */
+    border: 1px solid #ccc; /* Add a border around the fieldset */
+    border-radius: 8px; /* Add border radius for rounded corners */
+    
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+  }
+  
+  .rest-info label {
+    display: block; /* Make labels block-level for better spacing */
+    font-weight: bold; /* Add font weight to make labels stand out */
+    margin-bottom: 8px; /* Add spacing between labels */
+  }
+  
+  .rest-info input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px 0;
+    /* Add other styles for inputs inside the fieldset */
+  }
+  
+  /* index.css */
+.rest-info button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 24px; /* Increase padding for the button */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px; /* Change the font size */
+    transition: background-color 0.3s ease; /* Add a transition effect */
+  
+    /* Hover styles */
+  }
+  
+  .rest-info button:hover {
+    background-color: #0056b3; /* Change the button color on hover */
+  }
+  
+ /* index.css */
+.restList {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .restName {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  /* Style for individual .restName items (assumes Post component structure) */
+  .restName .Post {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px; /* Reduce the padding to make items smaller */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 0 0 calc(33.33% - 20px); /* Adjust the width for 3 items in a line */
+    background-color: #ffffff;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  
+  /* Add hover effect for .restName items */
+  .restName .Post:hover {
+    transform: scale(1.05);
+  }
+
+  .restListContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .restaurant-show {
+    text-align: center;
+    border: 3px solid green;
+    width: 80%;
+    margin: 30px auto;
+    font-family: 'Comfortaa', cursive;
+}
+
+.restaurant-info {
+    justify-content: center;
+    text-align: center;
+    color: rgb(1, 68, 127);
+    margin: 30px;
+}
+
+.restaurant-name {
+    color: black;
+    font-size: 30px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.restaurant-update {
+    justify-content: center;
+    text-align: center;
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    color: darkslategrey;
+    font-family: 'Comfortaa', cursive;
+    background-color: white;
+}
+
+.restaurant-delete {
+    text-align: center;
+    color: black;
+    font-family: 'Comfortaa', cursive;
+}
+
+.restaurant-picture-show {
+    height: 400px;
+}
+
+.show-image {
+    max-height: 550px; /* Adjust the max height to your desired size */
+    display: block;
+    margin: 0 auto;
+    
+    top: 50%;
+    left: 50%;
+    
+}
