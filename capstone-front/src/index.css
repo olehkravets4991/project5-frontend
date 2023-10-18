@@ -14,6 +14,14 @@ body{
     color: #ccc;
   }
 
+  label {
+    color: #000300;
+  }
+
+  h2 {
+    color: #000300;
+  }
+
 
 /* index.css */
 .restForm {

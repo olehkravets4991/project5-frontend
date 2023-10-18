@@ -18,7 +18,8 @@ function Show(props) {
         <Form method="post" action={`/update/${post.id}`}>
           <div className="update-input">
             <label>Name:</label>
-            <input
+            <input 
+              className="inputFields w-full block rounded-md border-0 py-1.47 px-1.5 text-gray-900 shadow-sm"
               type="text"
               name="name"
               placeholder="Name"
@@ -28,6 +29,7 @@ function Show(props) {
           <div className="update-input">
             <label>Address:</label>
             <input
+              className="inputFields w-full block rounded-md border-0 py-1.47 px-1.5 text-gray-900 shadow-sm"
               type="text"
               name="address"
               placeholder="Address"
@@ -37,6 +39,7 @@ function Show(props) {
           <div className="update-input">
             <label>Food:</label>
             <input
+              className="inputFields w-full block rounded-md border-0 py-1.47 px-1.5 text-gray-900 shadow-sm"
               type="text"
               name="food"
               placeholder="Food"
@@ -46,6 +49,7 @@ function Show(props) {
           <div className="update-input">
             <label>Notes:</label>
             <input
+              className="inputFields w-full block rounded-md border-0 py-1.47 px-1.5 text-gray-900 shadow-sm"
               type="text"
               name="notes"
               placeholder="Notes"
@@ -55,6 +59,7 @@ function Show(props) {
           <div className="update-input">
             <label>Picture:</label>
             <input
+              className="inputFields w-full block rounded-md border-0 py-1.47 px-1.5 text-gray-900 shadow-sm"
               type="text"
               name="picture"
               placeholder="Picture"
