@@ -30,7 +30,7 @@ function Index(props) {
             <label>Picture</label>
             <input type="text" name="picture" placeholder="Picture" />
           </fieldset>
-          <button>Create a new Restaurant</button>
+          <button className='w-full py-1 rounded-md mx-1.5  mb-5 bg-blue-900 hover:bg-blue-600 transform scale-105 transition-transform duration-300'>Create a new Restaurant</button>
         </Form>
       </div>
 

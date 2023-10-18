@@ -61,13 +61,13 @@ function Show(props) {
               defaultValue={post.picture}
             />
           </div>
-          <button className="update-button">Update Restaurant</button>
+          <button className='w-full py-1 rounded-md mx-1.5  mb-5 bg-blue-900 hover:bg-blue-600 transform scale-105 transition-transform duration-300'>Update Restaurant</button>
         </Form>
       </div>
       <div className="show-delete">
         <h2>Delete Restaurant</h2>
         <Form method="post" action={`/delete/${post.id}`}>
-          <button className="delete-button">Delete Restaurant</button>
+          <button className='w-full py-1 rounded-md mx-1.5  mb-5 bg-blue-900 hover:bg-blue-600 transform scale-105 transition-transform duration-300'>Delete Restaurant</button>
         </Form>
       </div>
       <Link to="/">Back to Index</Link>
